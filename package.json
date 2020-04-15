@@ -1,0 +1,23 @@
+{
+    "name": "graphql-placeholder",
+    "author": {
+        "name": "kingrayhan",
+        "email": "rayhan095@gmail.com",
+        "url": "https://rayhan.info"
+    },
+    "main": "index.js",
+    "scripts": {
+        "start": "node index",
+        "dev": "nodemon index",
+        "deploy": "now --public && now alias",
+        "debug": "ndb npm run dev"
+    },
+    "dependencies": {
+        "graphql-yoga": "^1.17.4",
+        "objectid": "^3.2.1"
+    },
+    "devDependencies": {
+        "ndb": "^1.1.4",
+        "nodemon": "^1.19.0"
+    }
+}

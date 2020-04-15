@@ -1,0 +1,47 @@
+input BannerInput {
+    time: String!, 
+    screen: String!, 
+    name_en: String!, 
+    name_ar: String!, 
+    redirection: String!, 
+    start_date: String!,
+    end_date: String!, 
+    active: Boolean!
+}
+
+input BannerUpdateInput {
+    time: String, 
+    screen: String, 
+    name_en: String, 
+    name_ar: String, 
+    redirection: String, 
+    start_date: String,
+    end_date: String, 
+    active: Boolean
+}
+
+
+# -------------- All Queries -------------- #
+type Query {
+    banner(bannerEnName: String!): Banner!
+    banners: [Banner!]
+}
+
+# -------------- All Mutations -------------- #
+type Mutation {
+    createBanner(data: BannerInput!): Banner!
+    updateBanner(bannerId: ID!, data: BannerUpdateInput!): Banner!
+    deleteBanner(bannerId: ID!): Banner!
+}
+# -------------- User typedef -------------- #
+type Banner {
+    id: ID!
+    time: String!, 
+    screen: String!, 
+    name_en: String!, 
+    name_ar: String!, 
+    redirection: String!, 
+    start_date: String!,
+    end_date: String!, 
+    active: Boolean!
+}

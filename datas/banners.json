@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "time": "now",
+        "screen": "home",
+        "name_en": "banner1",
+        "name_ar": "بنر1",
+        "redirection": "Not_redirecting",
+        "start_date": "2020-03-29 20:09:40.633Z",
+        "end_date": "2020-04-29 20:09:40.633Z",
+        "active": true
+    },
+    {
+        "id": 2,
+        "Time": "later",
+        "screen": "inner",
+        "name_en": "banner2",
+        "name_ar": "بنر2",
+        "redirection": "Specific_category",
+        "start_date": "2020-03-22 20:09:40.633Z",
+        "end_date": "2020-04-22 20:09:40.633Z",
+        "active": false
+    },
+    {
+        "id": 3,
+        "Time": "both",
+        "screen": "both",
+        "name_en": "banner3",
+        "name_ar": "بنر3",
+        "redirection": "Specific_coupon",
+        "start_date": "2020-01-29 20:09:40.633Z",
+        "end_date": "2020-05-29 20:09:40.633Z",
+        "active": true
+    }
+]
