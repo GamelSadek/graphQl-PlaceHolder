@@ -23,8 +23,9 @@ input BannerUpdateInput {
 
 # -------------- All Queries -------------- #
 type Query {
-    banner(bannerEnName: String!): Banner!
     banners: [Banner!]
+    validBannersForUser:[Banner]
+
 }
 
 # -------------- All Mutations -------------- #
