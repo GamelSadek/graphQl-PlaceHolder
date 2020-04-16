@@ -5,9 +5,9 @@ const banners = JSON.parse(fs.readFileSync('./datas/banners.json').toString())
 
 const resolvers = {
     Query: {
-        // banner(parent, args) {
-        //     return banners.find(banner => banner.name_en === args.bannerEnName)
-        // },
+        banner(parent, args) {
+            return banners.find(banner => banner.id === args.id)
+        },
         banners() {
             return banners
         }

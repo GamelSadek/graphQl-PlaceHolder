@@ -1,8 +1,14 @@
 [
     {
         "id": 1,
-        "time": "now",
-        "screen": "home",
+        "serve": [
+            "NOW!",
+            "later"
+        ],
+        "screen": [
+            "home",
+            "inner"
+        ],
         "name_en": "banner1",
         "name_ar": "بنر1",
         "image_en": "image1",
@@ -14,8 +20,12 @@
     },
     {
         "id": 2,
-        "Time": "later",
-        "screen": "inner",
+        "serve": [
+            "NOW!"
+        ],
+        "screen": [
+            "home"
+        ],
         "name_en": "banner2",
         "name_ar": "بنر2",
         "image_en": "image1",
@@ -27,8 +37,12 @@
     },
     {
         "id": 3,
-        "Time": "both",
-        "screen": "both",
+        "serve": [
+            "later"
+        ],
+        "screen": [
+            "inner"
+        ],
         "name_en": "banner3",
         "name_ar": "بنر3",
         "image_en": "image1",

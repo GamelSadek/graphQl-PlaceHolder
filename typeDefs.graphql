@@ -1,6 +1,6 @@
 input BannerInput {
-    time: String!, 
-    screen: String!, 
+    serve: [String!], 
+    screen: [String!], 
     name_en: String!, 
     name_ar: String!, 
     image_en: String!, 
@@ -12,8 +12,8 @@ input BannerInput {
 }
 
 input BannerUpdateInput {
-    time: String, 
-    screen: String, 
+    serve: [String], 
+    screen: [String], 
     name_en: String, 
     name_ar: String, 
     image_en: String, 
@@ -29,7 +29,7 @@ input BannerUpdateInput {
 type Query {
     banners: [Banner!]
     validBannersForUser:[Banner]
-
+    getBannerById(id: ID!): Banner
 }
 
 # -------------- All Mutations -------------- #
@@ -41,8 +41,8 @@ type Mutation {
 # -------------- User typedef -------------- #
 type Banner {
     id: ID!
-    time: String!, 
-    screen: String!, 
+    serve: [String!], 
+    screen: [String!], 
     name_en: String!, 
     name_ar: String!, 
     image_en: String!, 
