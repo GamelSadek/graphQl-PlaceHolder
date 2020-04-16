@@ -16,6 +16,8 @@ input BannerUpdateInput {
     screen: String, 
     name_en: String, 
     name_ar: String, 
+    image_en: String, 
+    image_ar: String, 
     redirection: String, 
     start_date: String,
     end_date: String, 
