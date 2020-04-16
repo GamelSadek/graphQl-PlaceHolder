@@ -5,31 +5,33 @@ const banners = JSON.parse(fs.readFileSync('./datas/banners.json').toString())
 
 const resolvers = {
     Query: {
-        banner(parent, args) {
-            return banners.find(banner => banner.id === args.id)
+        getBannerById(parent, args) {
+            return banners.find(banner => banner.name_en === args.bannerEnName)
         },
         banners() {
             return banners
+        },
+        validBannersForUser() {
+            return banners
         }
-        
     },
     Mutation: {
         createBanner(parent, args, context, info) {
             let { time, screen, name_en, name_ar, redirection, start_date, end_date, active } = args.data
             return {
                 id: 5,
-                time, 
-                screen, 
-                name_en, 
-                name_ar, 
-                redirection, 
+                time,
+                screen,
+                name_en,
+                name_ar,
+                redirection,
                 start_date,
-                 end_date, 
-                 active
+                end_date,
+                active
             }
         },
         updateBanner(parent, args, context, info) {
-            let {bannerId, data } = args
+            let { bannerId, data } = args
             let banner = banners.find(banner => banner.id == bannerId)
             let updatedBanner = {
                 id: bannerId,
